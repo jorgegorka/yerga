@@ -11,8 +11,10 @@
   <%= javascript_pack_tag 'application', 'data-turbolinks-track' => 'reload' %>
 </head>
 <body class="font-sans antialiased text-gray-900">
-<div data-controller="sidebar" data-sidebar-show-class="block"
-     data-sidebar-hide-class="hidden"  class="h-screen flex overflow-hidden bg-gray-100">
+  <div data-controller="sidebar"
+       data-sidebar-show-class="block"
+       data-sidebar-hide-class="hidden"
+       class="h-screen flex overflow-hidden bg-gray-100">
   <div data-sidebar-target="menu" class="hidden">
     <div class="fixed inset-0 flex z-40">
       <div class="fixed inset-0">
@@ -63,10 +65,8 @@
       </div>
     </div>
   </div>
-  <!-- Static sidebar for desktop -->
   <div class="hidden md:flex md:flex-shrink-0">
     <div class="flex flex-col w-64">
-      <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex flex-col h-0 flex-1 bg-gray-800">
         <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
           <div class="flex justify-center items-center flex-shrink-0 px-4">
